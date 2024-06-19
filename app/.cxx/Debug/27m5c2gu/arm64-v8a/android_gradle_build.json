@@ -1,0 +1,38 @@
+{
+  "buildFiles": [
+    "/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/angeld@backbase.com/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/.cxx/Debug/27m5c2gu/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/angeld@backbase.com/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/.cxx/Debug/27m5c2gu/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "SumaNaturales::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "SumaNaturales",
+      "output": "/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/build/intermediates/cxx/Debug/27m5c2gu/obj/arm64-v8a/libSumaNaturales.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/angeld@backbase.com/Library/Android/sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/angeld@backbase.com/Library/Android/sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

@@ -1,0 +1,3 @@
+/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/.cxx/Debug/27m5c2gu/x86/CMakeFiles/SumaNaturales.dir
+/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/.cxx/Debug/27m5c2gu/x86/CMakeFiles/edit_cache.dir
+/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/.cxx/Debug/27m5c2gu/x86/CMakeFiles/rebuild_cache.dir

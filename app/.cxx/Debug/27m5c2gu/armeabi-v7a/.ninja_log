@@ -1,0 +1,6 @@
+# ninja log v5
+0	297	1718807026016802887	CMakeFiles/my_lib.dir/SumaNaturales.cpp.o	14015ad17f42792b
+298	598	1718807026317721601	/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/build/intermediates/cxx/Debug/27m5c2gu/obj/armeabi-v7a/libmy_lib.so	e5d6c6f2ba4e764
+0	20	0	clean	73b12d765c2727c9
+0	333	1718807110330450784	CMakeFiles/my_lib.dir/SumaNaturales.cpp.o	14015ad17f42792b
+333	909	1718807110907343977	/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/build/intermediates/cxx/Debug/27m5c2gu/obj/armeabi-v7a/libmy_lib.so	e5d6c6f2ba4e764

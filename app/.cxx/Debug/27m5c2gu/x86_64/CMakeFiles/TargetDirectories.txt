@@ -1,0 +1,3 @@
+/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/.cxx/Debug/27m5c2gu/x86_64/CMakeFiles/my_lib.dir
+/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/.cxx/Debug/27m5c2gu/x86_64/CMakeFiles/edit_cache.dir
+/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/.cxx/Debug/27m5c2gu/x86_64/CMakeFiles/rebuild_cache.dir

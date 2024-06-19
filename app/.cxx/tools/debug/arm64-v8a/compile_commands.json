@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/.cxx/Debug/27m5c2gu/arm64-v8a",
+  "command": "/Users/angeld@backbase.com/Library/Android/sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/Users/angeld@backbase.com/Library/Android/sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DSumaNaturales_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles/SumaNaturales.dir/NaturalSum.cpp.o -c /Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/src/main/cpp/NaturalSum.cpp",
+  "file": "/Users/angeld@backbase.com/Documents/GitHub/JNINativeLib/app/src/main/cpp/NaturalSum.cpp"
+}
+]

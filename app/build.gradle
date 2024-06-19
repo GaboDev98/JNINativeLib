@@ -1,0 +1,116 @@
+// Apply necessary plugins for Android and Kotlin
+plugins {
+    // Apply Android application plugin
+    id 'com.android.application' // alias(libs.plugins.android.application)
+    // Apply Kotlin Android plugin
+    id 'kotlin-android' // alias(libs.plugins.jetbrains.kotlin.android)
+}
+
+// Android configuration block
+android {
+    // Set the namespace for the application
+    namespace 'com.gabodev.jninativelib'
+    // Compile SDK version
+    compileSdk 34
+
+    // Default configuration for the application
+    defaultConfig {
+        applicationId "com.gabodev.jninativelib" // Application ID
+        minSdk 24 // Minimum SDK version required
+        targetSdk 34 // Target SDK version
+        versionCode 1 // Version code
+        versionName "1.0" // Version name
+
+        // Test runner for instrumentation tests
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Enable vector drawables and use support library
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    // External native build configuration using CMake
+    externalNativeBuild {
+        cmake {
+            // Path to CMakeLists.txt file
+            path "src/main/cpp/CMakeLists.txt"
+            // CMake version to use (adjust according to your installed version)
+            version "3.22.1"
+        }
+    }
+
+    // Build types configuration (e.g., release, debug)
+    buildTypes {
+        release {
+            minifyEnabled false // Disable code shrinking (minification)
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro' // ProGuard rules files
+        }
+    }
+
+    // Specify the location of native libraries after building
+    sourceSets {
+        main {
+            // Directory containing native libraries after CMake build
+            jniLibs.srcDirs = ['src/main/cpp/build/intermediates/cmake/debug/obj/armeabi-v7a']
+        }
+    }
+
+    // Java and Kotlin compilation options
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // Kotlin compiler options
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    // Enable Jetpack Compose build features
+    buildFeatures {
+        compose true
+    }
+
+    // Compose options and version configuration
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.1'
+    }
+
+    // Packaging options to exclude specific resources
+    packaging {
+        resources {
+            it.excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
+}
+
+// Dependencies block
+dependencies {
+
+    // AndroidX core Kotlin extensions
+    implementation libs.androidx.core.ktx
+    // AndroidX lifecycle Kotlin extensions
+    implementation libs.androidx.lifecycle.runtime.ktx
+    // AndroidX activity Jetpack Compose integration
+    implementation libs.androidx.activity.compose
+    // AndroidX Compose dependency management BOM
+    implementation platform(libs.androidx.compose.bom)
+    // AndroidX Compose UI toolkit
+    implementation libs.androidx.ui
+    // AndroidX Compose UI graphics
+    implementation libs.androidx.ui.graphics
+    // AndroidX Compose UI tooling for preview
+    implementation libs.androidx.ui.tooling.preview
+    // AndroidX Material3 components
+    implementation libs.androidx.material3
+
+    // Test dependencies
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+    androidTestImplementation platform(libs.androidx.compose.bom)
+    androidTestImplementation libs.androidx.ui.test.junit4
+    debugImplementation libs.androidx.ui.tooling
+    debugImplementation libs.androidx.ui.test.manifest
+}
